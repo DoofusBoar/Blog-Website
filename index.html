@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Blogs</h1>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="#post1">talkSPORT</a></li>
+        <li><a href="#post2">Hollywood Life</a></li>
+        <li><a href="#post3">Lord Krishna</a></li>
+      </ul>
+    </nav>
+<input type="text" id="search-bar" placeholder="Search posts...">
+<button type="button" id="search-button">Search</button>
+
+  </header>
+  
+  <main>
+    <section id="post1" class="post">
+      <h2>talkSPORT</h2>
+      <p>Published on: <span class="date">12-02-2023</span></p>
+      <img src="1.jpg" alt="Image for Blog Post 1">
+      <p>	
+
+<a href="https://talksport.com/">https://talksport.com</a><br>
+This sports radio station covers various sports, among them football and boxing. There’s even an option to listen live to sport commentators and active events. Podcasts and schedules available too.</p>
+      <div class="comments">
+        <h3>Comments</h3>
+        <ul id="comments-list-1"></ul>
+        <form onsubmit="addComment(event, 1)">
+          <input type="text" id="name-1" placeholder="Your name" required>
+          <textarea id="message-1" placeholder="Your comment" required></textarea>
+          <button type="submit">Add Comment</button>
+        </form>
+      </div>
+    </section>
+
+   <section id="post2" class="post">
+      <h2>Hollywood Life</h2>
+      <p>Published on: <span class="date">03-01-2024</span></p>
+      <img src="2.jpg" alt="Image for Blog Post 2">
+      <p>
+<a href="https://hollywoodlife.com/">https://hollywoodlife.com</a><br>
+
+
+Entertainment news source geared towards a modern, over 18 audience. Posts include the most popular viral videos and memes sourced from around the web, with entertaining commentary links from contributors.</p>
+      <div class="comments">
+        <h3>Comments</h3>
+        <ul id="comments-list-1"></ul>
+        <form onsubmit="addComment(event, 1)">
+          <input type="text" id="name-1" placeholder="Your name" required>
+          <textarea id="message-1" placeholder="Your comment" required></textarea>
+          <button type="submit">Add Comment</button>
+        </form>
+      </div>
+    </section>
+
+<section id="post3" class="post">
+      <h2>Lord Krishna – Hindu Gods and Deities</h2>
+      <p>Published on: <span class="date">17-04-2024</span></p>
+      <img src="3.jpg" alt="Image for Blog Post 1">
+      <p>
+<a href="https://theartarium.com/blogs/news/lord-krishna-stories-legends-significance">https://theartarium.com/blogs/news/lord-krishna-stories-legends-significance</a><br>
+
+In this blog, we will learn more about the origin, significance, and symbolism of Lord Krishna in Hinduism and also some interesting tales surrounding his life events.</p>
+      <div class="comments">
+        <h3>Comments</h3>
+        <ul id="comments-list-1"></ul>
+        <form onsubmit="addComment(event, 1)">
+          <input type="text" id="name-1" placeholder="Your name" required>
+          <textarea id="message-1" placeholder="Your comment" required></textarea>
+          <button type="submit">Add Comment</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
